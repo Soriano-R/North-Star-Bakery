@@ -26,10 +26,10 @@ This is a static HTML and CSS website, so it does not require installation or ex
 
 4. Use the navigation menu to visit the Products, About Us, and Contact and Preorders pages.
 
-I can also run the website through a local development server. From inside the project folder, I can enter:
+To run the website through a local development server, open a terminal inside the project folder and enter:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then I can open [http://localhost:8000](http://localhost:8000) in a browser. I can stop the server by pressing `Control+C` in the terminal.
+Then open [http://localhost:8000](http://localhost:8000) in a browser. To stop the server, press `Control+C` in the terminal.
