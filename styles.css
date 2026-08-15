@@ -203,6 +203,70 @@ button:focus-visible {
     color: var(--charcoal);
 }
 
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite-button {
+    margin-top: auto;
+}
+
+.favorite-button[aria-pressed="true"] {
+    background-color: var(--peach);
+    color: var(--charcoal);
+}
+
+.favorites-panel {
+    border-left-color: var(--brown);
+    background-color: #fff3e7;
+}
+
+#favorites-list {
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.4rem;
+}
+
+#favorites-list li {
+    margin-bottom: 0.35rem;
+}
+
+.button-link {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.7rem 1rem;
+    border-radius: 0.35rem;
+    background-color: var(--brown);
+    color: var(--cream);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+    background-color: var(--peach);
+    color: var(--charcoal);
+}
+
+.error-message {
+    min-height: 1.5em;
+    color: #9b1c1c;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.field-error {
+    border: 2px solid #9b1c1c;
+    background-color: #fff5f5;
+}
+
+.form-status {
+    flex-basis: 100%;
+    margin: 0;
+    color: #246b35;
+    font-weight: 700;
+}
+
 address {
     font-style: normal;
 }
