@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,28 +22,40 @@
     </header>
 
     <main>
-        <section>
+        <section class="product-card" data-product-id="country-sourdough">
             <h2>Breads</h2>
             <img src="media/bakery-bread_c.png" alt="Assortment of freshly baked North Star Bakery bread">
             <p>Our bread selection includes country sourdough, multigrain loaves, baguettes, and seasonal flavors. Most loaves range from $6 to $10.</p>
+            <button class="favorite-button" type="button" data-favorite-id="country-sourdough" aria-pressed="false">Add Country Sourdough to Favorites</button>
         </section>
 
-        <section>
+        <section class="product-card" data-product-id="butter-croissant">
             <h2>Pastries</h2>
             <p>We offer croissants, muffins, fruit turnovers, cookies, and morning buns. Individual pastries range from $3 to $6.</p>
+            <button class="favorite-button" type="button" data-favorite-id="butter-croissant" aria-pressed="false">Add Butter Croissant to Favorites</button>
         </section>
 
-        <section>
+        <section class="product-card" data-product-id="celebration-cake">
             <h2>Cakes</h2>
             <p>Our cakes are available in classic chocolate, vanilla, lemon, and rotating seasonal flavors. Celebration cakes start at $32, depending on size and decoration.</p>
+            <button class="favorite-button" type="button" data-favorite-id="celebration-cake" aria-pressed="false">Add Celebration Cake to Favorites</button>
         </section>
 
-        <section>
+        <section class="product-card" data-product-id="signature-loaf">
             <h2>Signature Loaf</h2>
             <figure>
                 <img src="media/bakery-signature-loaf_c.png" alt="North Star Bakery signature round sourdough loaf with a scored crust">
                 <figcaption>Our signature sourdough is naturally fermented and baked until the crust is deep golden brown.</figcaption>
             </figure>
+            <button class="favorite-button" type="button" data-favorite-id="signature-loaf" aria-pressed="false">Add Signature Loaf to Favorites</button>
+        </section>
+
+        <section id="favorites-panel" class="favorites-panel" aria-labelledby="favorites-heading">
+            <h2 id="favorites-heading">My Bakery Favorites</h2>
+            <p>Select products above to make a list for your next visit. Your choices will still be here when you return.</p>
+            <p id="favorites-empty">No favorites selected yet.</p>
+            <ul id="favorites-list"></ul>
+            <a id="favorites-preorder-link" class="button-link" href="contact.html" hidden>Start a Preorder</a>
         </section>
 
         <section>
